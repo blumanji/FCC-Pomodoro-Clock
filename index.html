@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <audio id="alarm-sound" style="display:none;" controls="controls" preload="auto">
+  <source src="http://soundbible.com/grab.php?id=535&type=mp3"></source></audio>
+
+<div class="outer">
+  <div class="middle">
+    <div class="inner">
+      <div id="app-box" class="container-fluid">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-3 text-center font-weight-bold">
+              <br><br> Work Length:
+              <div>
+                <button id="work-up" type="button" class="btn btn-dark"><i class="fa fa-arrow-up"></i></button>
+              </div>
+              <div>
+                <h3><span id="work-length">25</span></h3>
+              </div>
+              <button id="work-down" type="button" class="btn btn-dark"><i class="fa fa-arrow-down"></i></button>
+            </div>
+
+            <div class="col-sm-6 text-center">
+              <div class="font-weight-bold">
+                <h2 id="title">Pomodoro Clock</h2></div>
+              <div>
+                <br><br>
+                <span id="timer" class="display-3 font-weight-bold">25:00</span>
+              </div>
+              <br><br>
+              <div><button id="start-button" class="btn btn-lg btn-block btn-dark">Start</button> <button id="reset-button" class="btn btn-block btn-warning"><strong>Reset</strong></button></div>
+            </div>
+
+            <div class="col-sm-3 text-center font-weight-bold">
+              <br><br>Break length:
+              <div>
+                <button id="break-up" type="button" class="btn btn-dark"><i class="fa fa-arrow-up"></i></button>
+              </div>
+              <div>
+                <h3><span id="break-length">5</span></h3></div>
+              <div><button id="break-down" type="button" class="btn btn-dark"><i class="fa fa-arrow-down"></i></button></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
